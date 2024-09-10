@@ -3,6 +3,7 @@ from fastapi import Path, APIRouter
 
 router = APIRouter(prefix="/items", tags=["items"])
 
+
 @router.get("/")
 def items():
     return [
@@ -14,12 +15,7 @@ def items():
 
 @router.get("/latest/")
 def latest():
-    return {
-        "item": {
-            "item_id": 1,
-            "item_name": "Item1"
-        }
-    }
+    return {"item": {"item_id": 1, "item_name": "Item1"}}
 
 
 @router.get("/{item_id}/")

@@ -12,6 +12,8 @@ fastapi = "^0.114.0"
 uvicorn = {extras = ["standart"], version = "^0.30.6"}
 pydantic = {extras = ["email"], version = "^2.9.1"}
 sqlalchemy = {extras = ["asyncio"], version = "^2.0.34"}
+aiosqlite = "^0.20.0"
+pydantic-settings = "^2.5.0"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.3.3"
